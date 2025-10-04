@@ -106,3 +106,26 @@ body{
 .main-button:hover{
   color: rgba(0, 0, 255, 0.545);
 }
+
+.container{
+  width: 100vw;
+  height: 600px;
+ background-color: burlywood;
+  display: flex;
+  overflow: scroll;
+  justify-content: space-between;
+
+}
+/* .container::-webkit-scrollbar{
+  height:3px;
+  background-color: aliceblue;
+} */
+
+.card{
+  margin: 20px;
+  padding: 15px;
+  height: 300px;
+  width: 220px;
+  background-color: cornsilk;
+  display: ;
+}

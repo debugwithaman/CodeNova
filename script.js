@@ -1,6 +1,9 @@
 let  api_Load = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772";
+let card = document.querySelector(".card")
 
-async function getData() {
+const button = document.querySelector(".main-button");
+button.addEventListener("onclick",()=>{
+  async function getData() {
   try {
     let res = await fetch(api_Load);
     let data = res.json();
@@ -17,5 +20,8 @@ async function getData() {
   name.textContent = data.strMeal;
   country.textContent = data.strArea;
   details.textContent = data.strInstructions;
-  
+  card.appendChild(name);
+  card.appendChild(country);
+  card.appendChild(details);
 }
+})
